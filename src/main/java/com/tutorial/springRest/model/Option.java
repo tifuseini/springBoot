@@ -12,4 +12,5 @@ public class Option {
     private Long id;
 
     @Column(name = "option_name")
+    private String name;
 }
