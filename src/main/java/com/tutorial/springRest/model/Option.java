@@ -1,9 +1,11 @@
 package com.tutorial.springRest.model;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
+@Entity
 public class Option {
 
     @Id
@@ -11,6 +13,6 @@ public class Option {
     @Column(name = "option_id")
     private Long id;
 
-    @Column(name = "option_name")
-    private String name;
+    @Column(name = "option_value")
+    private String value;
 }
